@@ -1,6 +1,6 @@
 img {
-  width: 200px; /* Ancho en píxeles */
-  height: 150px; /* Altura en píxeles */
+  width: 600px; /* Ancho en píxeles */
+  height: 450px; /* Altura en píxeles */
   -webkit-user-drag: none;
   user-drag: none;
   -webkit-touch-callout: none;
