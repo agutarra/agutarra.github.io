@@ -1,9 +1,92 @@
-img {
-  width: 600px; /* Ancho en píxeles */
-  height: 450px; /* Altura en píxeles */
-  -webkit-user-drag: none;
-  user-drag: none;
-  -webkit-touch-callout: none;
-  -webkit-contextMenu: none;
-  contextMenu: none;
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
 }
+
+body{
+    background: #f8f6f4;
+}
+
+main {
+}
+.header {
+  background: #f8f6f4;
+  display: flex;
+  position: relative; /* Enable absolute positioning for child elements */
+  align-items: flex-start;
+  width: 100%;
+  height: 260px; /* Adjust header height as needed */
+  z-index: 100; /* Ensure header stays on top */
+}
+
+.copyright{
+  text-align: right;
+}
+
+.header.fixed {
+  top: 0;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 100; /* Ensure the header stays on top */
+  // padding: 120px;
+  transition: height 0.5s ease;
+}
+
+.logo {
+  width: auto; 
+  height: 100%;
+  max-height: 240px;
+}
+
+nav {
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 17px; /* Default font size */
+  letter-spacing: 1px;
+  //color: #404040;
+  text-decoration: none; /* No underline by default */
+}
+
+nav ul li:hover {
+  font-size: 17px; /* Larger font size on hover */
+  // color: #404040; /* Blue text color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  // transition: height 0.5s ease;
+}
+
+a {
+  /* Styles for all links */
+  color: #404040; /* Blue text color */
+  text-decoration: none; /* Remove default underline */
+  // font-weight: bold; /* Bold font weight */
+  //padding: 5px 10px; /* Add padding around text */
+  //border: 1px solid #ccc; /* Add a border */
+}
+
+body, button, input, select, textarea {
+    color: #404040;
+    font-family: "Libre Baskerville", Libre, Georgia, Times, serif;
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+
